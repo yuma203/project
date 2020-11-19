@@ -9,12 +9,14 @@
 </head>
 
 <body>
+    {{!text}}
+
     <form method="post" action="/bulletin">
-        <input type="text" name="message">
-        <input type="submit" value="送信">
+        <input type="text" name="name" placeholder="name">
+        <input type="text" name="message" placeholder="message">
+        <input type="submit" value="POST">
     </form>
     <br>
-    {{!text}}
     <script type="text/javascript" src="js/app.js"></script>
 </body>
 
