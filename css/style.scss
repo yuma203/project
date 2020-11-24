@@ -1,0 +1,69 @@
+$base-color :#e6e5ef;
+$accent-color :#3e3a3a;
+$sub-color :#ced7dc;
+
+html {
+    background-color: $base-color;
+}
+
+.wrapper {
+    position: relative;
+}
+
+::placeholder {
+    text-align: left;
+    color: $accent-color;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#postArea {
+    position: absolute;
+    bottom: 0;
+    background-color: $sub-color;
+    height: 80px;
+    width: 640px;
+    position: fixed;
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    #form {
+        margin-left: 20px;
+        float: left;
+    }
+
+    input {
+        background-color: #fff;
+        border: solid 0;
+    }
+
+    #name {
+        height: 20px;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    #message {
+        width: 500px;
+        height: 30px;
+        padding: 0;
+        margin-top: 10px;
+    }
+
+    #post {
+        float: left;
+        height: 30px;
+        width: 60px;
+        padding: 0;
+        margin-top: 40px;
+        margin-left: 40px;
+        color: $accent-color;
+    }
+}

@@ -1,0 +1,81 @@
+html {
+  background-color: #e6e5ef;
+}
+
+.wrapper {
+  position: relative;
+}
+
+::-webkit-input-placeholder {
+  text-align: left;
+  color: #3e3a3a;
+}
+
+:-ms-input-placeholder {
+  text-align: left;
+  color: #3e3a3a;
+}
+
+::-ms-input-placeholder {
+  text-align: left;
+  color: #3e3a3a;
+}
+
+::placeholder {
+  text-align: left;
+  color: #3e3a3a;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#postArea {
+  position: absolute;
+  bottom: 0;
+  background-color: #ced7dc;
+  height: 80px;
+  width: 640px;
+  position: fixed;
+}
+
+#postArea ul {
+  margin: 0;
+  padding: 0;
+}
+
+#postArea #form {
+  margin-left: 20px;
+  float: left;
+}
+
+#postArea input {
+  background-color: #fff;
+  border: solid 0;
+}
+
+#postArea #name {
+  height: 20px;
+  margin-top: 10px;
+  padding: 0;
+}
+
+#postArea #message {
+  width: 500px;
+  height: 30px;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#postArea #post {
+  float: left;
+  height: 30px;
+  width: 60px;
+  padding: 0;
+  margin-top: 40px;
+  margin-left: 40px;
+  color: #3e3a3a;
+}
+/*# sourceMappingURL=style.css.map */
