@@ -1,18 +1,14 @@
 $base-color :#e6e5ef;
-$accent-color :#3e3a3a;
-$sub-color :#ced7dc;
+$sub-color :#3e3a3a;
+$accent-color :#ced7dc;
 
 html {
     background-color: $base-color;
 }
 
-.wrapper {
-    position: relative;
-}
-
 ::placeholder {
     text-align: left;
-    color: $accent-color;
+    color: $sub-color;
 }
 
 .clearfix::after {
@@ -22,12 +18,12 @@ html {
 }
 
 #postArea {
-    position: absolute;
-    bottom: 0;
-    background-color: $sub-color;
     height: 80px;
     width: 640px;
+    right: 20px;
+    bottom: 20px;
     position: fixed;
+    background-color: $sub-color;
 
     ul {
         margin: 0;
@@ -40,8 +36,8 @@ html {
     }
 
     input {
-        background-color: #fff;
         border: solid 0;
+        background-color: #fff;
     }
 
     #name {
@@ -53,17 +49,17 @@ html {
     #message {
         width: 500px;
         height: 30px;
-        padding: 0;
         margin-top: 10px;
+        padding: 0;
     }
 
     #post {
-        float: left;
         height: 30px;
         width: 60px;
-        padding: 0;
         margin-top: 40px;
         margin-left: 40px;
-        color: $accent-color;
+        padding: 0;
+        float: left;
+        color: $sub-color;
     }
 }

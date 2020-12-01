@@ -1,14 +1,14 @@
-from bottle import route, run, template, request, get, static_file
+from bottle import route, run, template, request, static_file
 import fileUtil
 import datetime
 
-@get("/css/<filepath:re:.*\.css>")
-def css(filepath):
-    return static_file(filepath, root="css")
+@route('/bulletin/css/style.css')
+def css():
+    return static_file('./css/style.css', root='.')
 
-@get("/js/<filepath:re:.*\.js>")
-def js(filepath):
-    return static_file(filepath, root="js")
+@route("/bulletin/js/app.js")
+def js():
+    return static_file("./js/app.js", root=".")
 
 @route('/bulletin')
 def bulletin():
